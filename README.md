@@ -131,7 +131,7 @@
          * birthdate: date
          * photo: string
          * notes: string
-         * Response: Message
+    * Response: Message
 ### Update a employees
 * Request:
     * Method: PUT
@@ -247,3 +247,57 @@
 
 *=======================================================================
 
+
+# Entity
+## Products (BANG 6)
+* product_id: int
+* product_name: string
+* supplier_id: string
+* category_id: string
+* photo: unit
+* price: string
+
+
+
+# API
+## Products
+### Get all products
+* Request
+    * Method: GET
+    * Endpoint: /products/all
+    * Params: None
+    * Body: None
+* Response: [Products]
+### Add a products
+* Request
+    * Method: POST
+    * Endpoint: /products
+    * Body:
+         * product_name: string
+         * supplier_id: string
+         * category_id: string
+         * photo: unit
+         * price: string
+
+     * Response: Message
+### Update a products
+* Request:
+    * Method: PUT
+    * Endpoint: /products/:product_id
+    * Body:
+         * product_name: string
+         * supplier_id: string
+         * category_id: string
+         * photo: unit
+         * price: string
+
+* Response: Message
+
+### Delete a products
+* Request:
+    * Method: DELETE
+    * Endpoint: /products/:product_id
+* Response: message
+
+
+*=======================================================================
