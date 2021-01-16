@@ -61,52 +61,42 @@
 *=======================================================================
 
 # Entity
-## Customer
-* id: int
-* customer_name: string
-* contact_name: string
-* address: string
-* city: string
-* postal_code: string
-* country: string
-
+## Categories (BANG 2)
+* category_id: int
+* category_name: string
+* description: string
 
 # API
-## Customer
-### Get all customer
+## Categories
+### Get all categories
 * Request
     * Method: GET
-    * Endpoint: /customer/all
+    * Endpoint: '/categories/all'
     * Params: None
     * Body: None
-* Response: [Customer]
-### Add a customer
+* Response: [Categories]
+### Add a categories
 * Request
     * Method: POST
-    * Endpoint: /customer
+    * Endpoint: /categories
     * Body:
-        * customer_name: string
-        * contact_name: string
-        * address: string
-        * city: string
-        * postal_code: string
-        * country: string
+         * category_name: string
+         * description: string
+
 * Response: Message
-### Update a customer
+### Update a categories
 * Request:
     * Method: PUT
-    * Endpoint: /customer/:customer_id
+    * Endpoint: /categories/:category_id
     * Body:
-        * customer_name: string
-        * contact_name: string
-        * address: string
-        * city: string
-        * postal_code: string
-        * country: string
+         * category_name: string
+         * description: string
 * Response: Message
 
-### Delete a customer
+### Delete a categories
 * Request:
     * Method: DELETE
-    * Endpoint: /customer/:customer_id
+    * Endpoint: /categories/:category_id
 * Response: message
+
+*=======================================================================
