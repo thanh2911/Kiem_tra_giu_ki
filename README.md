@@ -199,3 +199,51 @@
 
 *=======================================================================
 
+# Entity
+## Orders (BANG 5)
+* order_id: int
+* customer_id: string
+* employee_id: string
+* orderdate: date
+* shipper_id: string
+
+
+# API
+## Orders
+### Get all orders
+* Request
+    * Method: GET
+    * Endpoint: /orders/all
+    * Params: None
+    * Body: None
+* Response: [orders]
+### Add a orders
+* Request
+    * Method: POST
+    * Endpoint: /orders
+    * Body:
+         * customer_id: string
+         * employee_id: string
+         * orderdate: date
+         * shipper_id: string
+* Response: Message
+### Update a orders
+* Request:
+    * Method: PUT
+    * Endpoint: /orders/:order_id
+    * Body:
+         * customer_id: string
+         * employee_id: string
+         * orderdate: date
+         * shipper_id: string
+* Response: Message
+
+### Delete a orders
+* Request:
+    * Method: DELETE
+    * Endpoint: /orders/:order_id
+* Response: message
+
+
+*=======================================================================
+
