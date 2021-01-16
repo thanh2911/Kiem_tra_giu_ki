@@ -343,3 +343,59 @@
 * Response: message
 
 *=======================================================================
+
+
+# Entity
+## Suppliers (BANG 8)
+* supplier_id : int
+* supplier_name: string
+* contact_name: string
+* address: string
+* city: string
+* postal_code: string
+* country: string
+* phone: string
+
+
+# API
+## Suppliers
+### Get all suppliers
+* Request
+    * Method: GET
+    * Endpoint: /suppliers/all
+    * Params: None
+    * Body: None
+* Response: [Suppliers]
+### Add a suppliers
+* Request
+    * Method: POST
+    * Endpoint: /suppliers
+    * Body:
+         * supplier_name: string
+         * contact_name: string
+         * address: string
+         * city: string
+         * postal_code: string
+         * country: string
+         * phone: string
+* Response: Message
+### Update a suppliers
+* Request:
+    * Method: PUT
+    * Endpoint: /suppliers/:supplier_id 
+    * Body:
+         * supplier_name: string
+         * contact_name: string
+         * address: string
+         * city: string
+         * postal_code: string
+         * country: string
+         * phone: string
+* Response: Message
+
+### Delete a suppliers
+* Request:
+    * Method: DELETE
+    * Endpoint: /suppliers/:supplier_id 
+* Response: message
+
