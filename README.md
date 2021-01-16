@@ -7,4 +7,4 @@
 
 # Get all customer
 * Request
-   - Method: GET
+   * Method: GET
