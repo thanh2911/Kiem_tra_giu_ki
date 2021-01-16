@@ -100,3 +100,57 @@
 * Response: message
 
 *=======================================================================
+
+# Entity
+## Employees (BANG 3)
+* employee_id: int
+* lastname: string
+* firstname: string
+* birthdate: date
+* photo: string
+* notes: string
+
+
+
+# API
+## Employees
+### Get all employees
+* Request
+    * Method: GET
+    * Endpoint: /employees/all
+    * Params: None
+    * Body: None
+* Response: [Employees]
+### Add a employees
+* Request
+    * Method: POST
+    * Endpoint: /employees
+    * Body:
+         * lastname: string
+         * firstname: string
+         * birthdate: date
+         * photo: string
+         * notes: string
+         * Response: Message
+### Update a employees
+* Request:
+    * Method: PUT
+    * Endpoint: /employees/:employee_id
+    * Body:
+         * lastname: string
+         * firstname: string
+         * birthdate: date
+         * photo: string
+         * notes: string
+         * Response: Message
+* Response: Message
+
+### Delete a employees
+* Request:
+    * Method: DELETE
+    * Endpoint: /employees/:employee_id
+* Response: message
+
+
+*=======================================================================
+
