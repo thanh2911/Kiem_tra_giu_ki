@@ -61,7 +61,7 @@
 *=======================================================================
 
 # Entity
-## Categories (BANG 2)
+## ```Categories (BANG 2)```
 * category_id: int
 * category_name: string
 * description: string
@@ -102,7 +102,7 @@
 *=======================================================================
 
 # Entity
-## Employees (BANG 3)
+## ```Employees (BANG 3)```
 * employee_id: int
 * lastname: string
 * firstname: string
@@ -155,7 +155,7 @@
 *=======================================================================
 
 # Entity
-## OrderDetails (BANG 4)
+## ```OrderDetails (BANG 4)```
 * orderdetail_id: int
 * order_id: string
 * product_id: string
@@ -200,7 +200,7 @@
 *=======================================================================
 
 # Entity
-## Orders (BANG 5)
+## ```Orders (BANG 5)```
 * order_id: int
 * customer_id: string
 * employee_id: string
@@ -249,7 +249,7 @@
 
 
 # Entity
-## Products (BANG 6)
+## ```Products (BANG 6)```
 * product_id: int
 * product_name: string
 * supplier_id: string
@@ -304,7 +304,7 @@
 
 
 # Entity
-## Shippers (BANG 7)
+## ```Shippers (BANG 7)```
 * shipper_id: int
 * shipper_name: string
 * phone: string
@@ -346,7 +346,7 @@
 
 
 # Entity
-## Suppliers (BANG 8)
+## ```Suppliers (BANG 8)```
 * supplier_id : int
 * supplier_name: string
 * contact_name: string
