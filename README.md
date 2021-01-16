@@ -8,3 +8,6 @@
 # Get all customer
 * Request
    * Method: GET
+   * Endpoint: /customer/all
+   * Params: None
+   * Body: None
