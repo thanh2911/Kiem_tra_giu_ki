@@ -2,6 +2,9 @@
 
 # How to run
 
+* (ĐỊA CHỈ IP DOCKER EM Không luu nen ... khi chấm anh chỉnh hộ phần ip docker trong dockerfile... 
+* đổi máy nó đổi ip :)) )
+
 1. Stop and remove old container: ```docker stop flask-backend && docker rm flask-backend```
 1. Build image: ```docker build -t backend .```
 1. Run the container: ```docker run -d --name flask-backend -e password=postgres -p 5000:5000 backend```
