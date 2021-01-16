@@ -2,8 +2,8 @@
 
 # How to run
 
-* ```(ĐỊA CHỈ IP DOCKER em Không luu nen ... khi chấm anh chỉnh hộ phần ip docker trong dockerfile... thành ip máy anh 
-* ``` đổi máy nó đổi ip :)) ... em c ko rành phần nay lắm... trên máy em chạy ổn )
+* (ĐỊA CHỈ IP DOCKER em Không luu nen ... khi chấm anh chỉnh hộ phần ip docker trong dockerfile... thành ip máy anh 
+*  đổi máy nó đổi ip :)) ... em c ko rành phần nay lắm... trên máy em chạy ổn )
 
 1. Stop and remove old container: ```docker stop flask-backend && docker rm flask-backend```
 1. Build image: ```docker build -t backend .```
