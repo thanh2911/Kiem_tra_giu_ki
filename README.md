@@ -301,3 +301,45 @@
 
 
 *=======================================================================
+
+
+# Entity
+## Shippers (BANG 7)
+* shipper_id: int
+* shipper_name: string
+* phone: string
+
+# API
+## Shippers
+### Get all shippers
+* Request
+    * Method: GET
+    * Endpoint: '/shippers/all'
+    * Params: None
+    * Body: None
+* Response: [Shippers]
+### Add a shippers
+* Request
+    * Method: POST
+    * Endpoint: /shippers
+    * Body:
+         * shipper_name: string
+         * phone: string
+
+* Response: Message
+### Update a shippers
+* Request:
+    * Method: PUT
+    * Endpoint: /shippers/:shipper_id
+    * Body:
+         * shipper_name: string
+         * phone: string
+* Response: Message
+
+### Delete a shippers
+* Request:
+    * Method: DELETE
+    * Endpoint: /shippers/:shipper_id
+* Response: message
+
+*=======================================================================
