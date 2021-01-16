@@ -7,7 +7,7 @@
 1. Run the container: ```docker run -d --name flask-backend -e password=postgres -p 5000:5000 backend```
 
 # Entity
-## Customer (BANG 1)
+## ```Customer (BANG 1)```
 * id: int
 * customer_name: string
 * contact_name: string
