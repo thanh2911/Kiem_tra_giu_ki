@@ -154,3 +154,48 @@
 
 *=======================================================================
 
+# Entity
+## OrderDetails (BANG 4)
+* orderdetail_id: int
+* order_id: string
+* product_id: string
+* quantity: string
+
+# API
+## OrderDetails
+### Get all orderdetails
+* Request
+    * Method: GET
+    * Endpoint: /orderdetails/all
+    * Params: None
+    * Body: None
+* Response: [OrderDetails]
+### Add a orderdetails
+* Request
+    * Method: POST
+    * Endpoint: /orderdetails
+    * Body:
+         * order_id: string
+         * product_id: string
+         * quantity: string
+         * Response: Message
+### Update a orderdetails
+* Request:
+    * Method: PUT
+    * Endpoint: /orderdetails/:orderdetail_id
+    * Body:
+         * order_id: string
+         * product_id: string
+         * quantity: string
+         * Response: Message
+* Response: Message
+
+### Delete a orderdetails
+* Request:
+    * Method: DELETE
+    * Endpoint: /orderdetails/:orderdetail_id
+* Response: message
+
+
+*=======================================================================
+
