@@ -25,14 +25,14 @@
 ### Get all customer
 * Request
     * Method: GET
-    * Endpoint: /customer/all
+    * Endpoint: /customers/all
     * Params: None
     * Body: None
 * Response: [Customer]
 ### Add a customer
 * Request
     * Method: POST
-    * Endpoint: /customer
+    * Endpoint: /customers
     * Body:
         * customer_name: string
         * contact_name: string
@@ -44,7 +44,7 @@
 ### Update a customer
 * Request:
     * Method: PUT
-    * Endpoint: /customer/:customer_id
+    * Endpoint: /customers/:customer_id
     * Body:
         * customer_name: string
         * contact_name: string
@@ -57,7 +57,7 @@
 ### Delete a customer
 * Request:
     * Method: DELETE
-    * Endpoint: /customer/:customer_id
+    * Endpoint: /customers/:customer_id
 * Response: message
 
 
